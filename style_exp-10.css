@@ -1,0 +1,122 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* --- Navbar Container [cite: 13] --- */
+        .navbar {
+            background-color: #222; /* Dark background matching Page 5 output */
+            color: white;
+            /* Flexbox Implementation  */
+            display: flex;
+            justify-content: space-between; /* Spacing elements apart [cite: 20] */
+            align-items: center; /* Vertical alignment [cite: 22] */
+            padding: 15px 20px;
+            position: relative;
+            flex-wrap: wrap; /* Allows menu to drop down on mobile */
+        }
+
+        /* --- Logo Styling --- */
+        .logo {
+            font-size: 1.8rem; /* Relative unit  */
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* --- Navigation Links (Menu) --- */
+        .nav-links {
+            list-style: none;
+            display: flex; /* Horizontal list for desktop */
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: #ff9800; /* Orange highlight */
+        }
+
+        /* --- Action Buttons (Cart & Login) --- */
+        .nav-actions {
+            display: flex;
+            gap: 15px;
+            align-items: right;
+        }
+
+        .nav-actions a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* --- Hamburger Menu Icon & Checkbox Hack  --- */
+        /* Hide the actual checkbox input */
+        #menu-toggle {
+            display: none;
+        }
+
+        /* The Label acts as the Hamburger Icon */
+        .menu-icon {
+            display: none; /* Hidden on desktop */
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        /* --- Main Content Area --- */
+        .hero-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .hero-section h1 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* --- MEDIA QUERIES (Mobile View) [cite: 26, 59] --- */
+        @media (max-width: 768px) {
+            
+            /* Show Hamburger Icon */
+            .menu-icon {
+                display: block; /* [cite: 61] */
+                order: 1; /* Adjust visual order if needed */
+            }
+
+            /* Hide Links by default on mobile [cite: 60] */
+            .nav-links {
+                display: none;
+                width: 100%; /* Full width for drop down */
+                flex-direction: column; /* Stack vertical [cite: 23] */
+                text-align: center;
+                padding-top: 20px;
+                order: 3; /* Force links to drop to the bottom */
+            }
+
+            .nav-links li {
+                padding: 10px 0;
+                border-bottom: 1px solid #444;
+            }
+
+            /* Actions stay visible on top right */
+            .nav-actions {
+                order: 2;
+            }
+
+            /* CHECKBOX HACK LOGIC [cite: 55, 63] */
+            /* When checkbox is checked, select the sibling .nav-links and display it */
+            #menu-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+        }
