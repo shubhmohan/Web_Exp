@@ -57,8 +57,6 @@
             font-size: 0.9rem;
         }
 
-        /* --- Hamburger Menu Icon & Checkbox Hack  --- */
-        /* Hide the actual checkbox input */
         #menu-toggle {
             display: none;
         }
