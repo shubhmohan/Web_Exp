@@ -61,7 +61,6 @@
             display: none;
         }
 
-        /* The Label acts as the Hamburger Icon */
         .menu-icon {
             display: none; /* Hidden on desktop */
             font-size: 1.8rem;
