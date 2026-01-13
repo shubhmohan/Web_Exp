@@ -27,7 +27,6 @@
             letter-spacing: 1px;
         }
 
-        /* --- Navigation Links (Menu) --- */
         .nav-links {
             list-style: none;
             display: flex; /* Horizontal list for desktop */
