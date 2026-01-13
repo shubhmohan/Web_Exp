@@ -77,10 +77,8 @@
             color: #333;
         }
 
-        /* --- MEDIA QUERIES (Mobile View) [cite: 26, 59] --- */
         @media (max-width: 768px) {
             
-            /* Show Hamburger Icon */
             .menu-icon {
                 display: block; /* [cite: 61] */
                 order: 1; /* Adjust visual order if needed */
