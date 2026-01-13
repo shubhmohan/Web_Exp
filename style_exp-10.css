@@ -62,12 +62,11 @@
         }
 
         .menu-icon {
-            display: none; /* Hidden on desktop */
+            display: none;
             font-size: 1.8rem;
             cursor: pointer;
         }
 
-        /* --- Main Content Area --- */
         .hero-section {
             text-align: center;
             padding: 50px 20px;
