@@ -21,9 +21,8 @@
             flex-wrap: wrap; 
         }
 
-        /* --- Logo Styling --- */
         .logo {
-            font-size: 1.8rem; /* Relative unit  */
+            font-size: 1.8rem; 
             font-weight: bold;
             letter-spacing: 1px;
         }
