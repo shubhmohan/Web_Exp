@@ -87,7 +87,7 @@
             .nav-links {
                 display: none;
                 width: 100%; /* Full width for drop down */
-                flex-direction: column; /* Stack vertical [cite: 23] */
+                flex-direction: column;
                 text-align: center;
                 padding-top: 20px;
                 order: 3; /* Force links to drop to the bottom */
