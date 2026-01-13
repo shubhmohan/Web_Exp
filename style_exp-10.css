@@ -11,7 +11,7 @@
 
 
         .navbar {
-            background-color: #222; /* Dark background matching Page 5 output */
+            background-color: #222;
             color: white;
             /* Flexbox Implementation  */
             display: flex;
