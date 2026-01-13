@@ -80,8 +80,8 @@
         @media (max-width: 768px) {
             
             .menu-icon {
-                display: block; /* [cite: 61] */
-                order: 1; /* Adjust visual order if needed */
+                display: block; 
+                order: 1;
             }
 
             /* Hide Links by default on mobile [cite: 60] */
