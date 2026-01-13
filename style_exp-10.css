@@ -97,13 +97,11 @@
                 padding: 10px 0;
                 border-bottom: 1px solid #444;
             }
-            
+
             .nav-actions {
                 order: 2;
             }
 
-            /* CHECKBOX HACK LOGIC [cite: 55, 63] */
-            /* When checkbox is checked, select the sibling .nav-links and display it */
             #menu-toggle:checked ~ .nav-links {
                 display: flex;
             }
