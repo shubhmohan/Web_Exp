@@ -15,7 +15,7 @@
             color: white;
             display: flex;
             justify-content: space-between; 
-            align-items: center; /* Vertical alignment [cite: 22] */
+            align-items: center;
             padding: 15px 20px;
             position: relative;
             flex-wrap: wrap; /* Allows menu to drop down on mobile */
