@@ -14,7 +14,7 @@
             background-color: #222;
             color: white;
             display: flex;
-            justify-content: space-between; /* Spacing elements apart [cite: 20] */
+            justify-content: space-between; 
             align-items: center; /* Vertical alignment [cite: 22] */
             padding: 15px 20px;
             position: relative;
