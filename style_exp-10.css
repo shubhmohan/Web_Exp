@@ -44,7 +44,6 @@
             color: #ff9800; 
         }
 
-        /* --- Action Buttons (Cart & Login) --- */
         .nav-actions {
             display: flex;
             gap: 15px;
